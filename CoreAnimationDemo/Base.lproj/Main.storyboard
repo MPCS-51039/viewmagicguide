@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Core Animation Demo View Controller-->
+        <!--Core Animations-->
         <scene sceneID="tJl-81-Zw7">
             <objects>
                 <viewController id="BLQ-7n-9IN" customClass="CoreAnimationDemoViewController" customModule="CoreAnimationDemo" customModuleProvider="target" sceneMemberID="viewController">
@@ -108,7 +108,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="1ch-lO-Gqs"/>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="favorites" id="gO9-6y-gFZ"/>
+                    <tabBarItem key="tabBarItem" title="Core Animations" image="layerAnimationDeSelected" selectedImage="layerAnimationSelected" id="gO9-6y-gFZ"/>
                     <connections>
                         <outlet property="basicAnimationView" destination="RGi-Iq-aZE" id="kOh-kl-VhD"/>
                         <outlet property="keyframeAnimationView" destination="gyO-Zw-7Oz" id="tih-mx-9zU"/>
@@ -118,9 +118,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E6W-Uq-CZf" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1139" y="-658"/>
+            <point key="canvasLocation" x="284" y="-930"/>
         </scene>
-        <!--Gesture Recognizer Demo View Controller-->
+        <!--Gesture Recognizers-->
         <scene sceneID="xDd-LT-vhc">
             <objects>
                 <viewController id="cME-Zw-NnW" customClass="GestureRecognizerDemoViewController" customModule="CoreAnimationDemo" customModuleProvider="target" sceneMemberID="viewController">
@@ -130,31 +130,48 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="VxX-kw-WG4"/>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="downloads" id="6fG-eh-Vxt"/>
+                    <tabBarItem key="tabBarItem" title="Gesture Recognizers" image="gestureDeSelected" selectedImage="gestureSelected" id="6fG-eh-Vxt"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dvW-ha-hb7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="719" y="816"/>
         </scene>
-        <!--Animation Demo View Controller-->
+        <!--UI Animation-->
         <scene sceneID="59f-dE-0ZQ">
             <objects>
                 <viewController id="ici-yN-6HK" customClass="UIAnimationDemoViewController" customModule="CoreAnimationDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4n6-P0-h6o">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cHU-I8-3IJ">
+                                <rect key="frame" x="87" y="145" width="240" height="120"/>
+                                <color key="backgroundColor" red="0.97662385470000002" green="0.35221918800000002" blue="0.071867640290000007" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="Foi-bf-EDL"/>
+                                    <constraint firstAttribute="height" constant="120" id="ioD-Ao-uL8"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="cHU-I8-3IJ" firstAttribute="centerX" secondItem="F1m-wp-yhp" secondAttribute="centerX" id="8k8-iE-Hm5"/>
+                            <constraint firstItem="cHU-I8-3IJ" firstAttribute="top" secondItem="F1m-wp-yhp" secondAttribute="top" constant="101" id="mkQ-5P-RVz"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="F1m-wp-yhp"/>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="search" id="K1E-gm-Q2I"/>
+                    <tabBarItem key="tabBarItem" title="UI Animation" image="animationDeSelected" selectedImage="animationSelected" id="K1E-gm-Q2I"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="animatedView" destination="cHU-I8-3IJ" id="WYd-HZ-hxh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bjS-0X-Myg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1246" y="72"/>
+            <point key="canvasLocation" x="555" y="-254"/>
         </scene>
-        <!--Layer Demo View Controller-->
+        <!--Layers-->
         <scene sceneID="Pn2-Oi-mKh">
             <objects>
                 <viewController id="M41-ld-NmP" customClass="LayerDemoViewController" customModule="CoreAnimationDemo" customModuleProvider="target" sceneMemberID="viewController">
@@ -217,14 +234,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="VvB-Oc-RQH"/>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="recents" id="OPa-96-hv7"/>
+                    <tabBarItem key="tabBarItem" title="Layers" image="layersDeSelected" selectedImage="layersSelected" id="OPa-96-hv7"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eA4-CJ-J3C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="404" y="-818"/>
+            <point key="canvasLocation" x="-362" y="-978"/>
         </scene>
-        <!--Drawing View Controller-->
+        <!--Drawing-->
         <scene sceneID="bwt-N7-IEr">
             <objects>
                 <viewController id="pkq-9v-kl2" customClass="DrawingViewController" customModule="CoreAnimationDemo" customModuleProvider="target" sceneMemberID="viewController">
@@ -246,11 +263,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="KiE-u1-Vzg"/>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="contacts" id="g1L-Yb-p5m"/>
+                    <tabBarItem key="tabBarItem" title="Drawing" image="drawingDeSelected" selectedImage="drawingSelected" id="g1L-Yb-p5m"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6bm-3H-trF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-461" y="-935"/>
+            <point key="canvasLocation" x="-994" y="-978"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Zy4-Cl-iSE">
@@ -274,4 +291,16 @@
             <point key="canvasLocation" x="-661" y="178"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="animationDeSelected" width="16.666666030883789" height="16.666666030883789"/>
+        <image name="animationSelected" width="16.666666030883789" height="16.666666030883789"/>
+        <image name="drawingDeSelected" width="16.666666030883789" height="16.666666030883789"/>
+        <image name="drawingSelected" width="16.666666030883789" height="16.666666030883789"/>
+        <image name="gestureDeSelected" width="16.666666030883789" height="16.666666030883789"/>
+        <image name="gestureSelected" width="16.666666030883789" height="16.666666030883789"/>
+        <image name="layerAnimationDeSelected" width="16.666666030883789" height="16.666666030883789"/>
+        <image name="layerAnimationSelected" width="16.666666030883789" height="16.666666030883789"/>
+        <image name="layersDeSelected" width="16.666666030883789" height="16.666666030883789"/>
+        <image name="layersSelected" width="16.666666030883789" height="16.666666030883789"/>
+    </resources>
 </document>

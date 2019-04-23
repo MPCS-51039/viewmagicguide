@@ -11,4 +11,7 @@ import UIKit
 
 class UIAnimationDemoViewController: UIViewController {
     
+    @IBOutlet weak var animatedView: UIView!
+    
+    
 }
