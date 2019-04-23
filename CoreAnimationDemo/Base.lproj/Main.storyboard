@@ -120,7 +120,7 @@
             </objects>
             <point key="canvasLocation" x="284" y="-930"/>
         </scene>
-        <!--Gesture Recognizers-->
+        <!--Gestures-->
         <scene sceneID="xDd-LT-vhc">
             <objects>
                 <viewController id="cME-Zw-NnW" customClass="GestureRecognizerDemoViewController" customModule="CoreAnimationDemo" customModuleProvider="target" sceneMemberID="viewController">
@@ -130,7 +130,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="VxX-kw-WG4"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Gesture Recognizers" image="gestureDeSelected" selectedImage="gestureSelected" id="6fG-eh-Vxt"/>
+                    <tabBarItem key="tabBarItem" title="Gestures" image="gestureDeSelected" selectedImage="gestureSelected" id="6fG-eh-Vxt"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dvW-ha-hb7" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -153,10 +153,50 @@
                                     <constraint firstAttribute="height" constant="120" id="ioD-Ao-uL8"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7JX-4d-km5">
+                                <rect key="frame" x="133" y="323" width="148" height="30"/>
+                                <state key="normal" title="Animate Orange View"/>
+                                <connections>
+                                    <action selector="didTapTopView:" destination="ici-yN-6HK" eventType="touchUpInside" id="2Tu-2d-heO"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="tr1-i7-CPl">
+                                <rect key="frame" x="115.66666666666669" y="443" width="183" height="80"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WbF-iq-3hR">
+                                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                        <color key="backgroundColor" red="0.064303465187549591" green="0.82870912551879883" blue="0.84368771314620972" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="BkW-ma-Pre"/>
+                                            <constraint firstAttribute="width" constant="80" id="ynd-uC-xpK"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c7S-1Z-Rn7">
+                                        <rect key="frame" x="103" y="0.0" width="80" height="80"/>
+                                        <color key="backgroundColor" red="0.0068689426407217979" green="0.99718242883682251" blue="0.30839979648590088" alpha="0.35466609589999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="ne2-mh-orW"/>
+                                            <constraint firstAttribute="height" constant="80" id="pPt-E1-fIt"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zUr-xI-BV8">
+                                <rect key="frame" x="134" y="588" width="147" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Animate Green Views"/>
+                                <connections>
+                                    <action selector="didTapBottomViews:" destination="ici-yN-6HK" eventType="touchUpInside" id="jE7-2j-Qxo"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="tr1-i7-CPl" firstAttribute="centerX" secondItem="F1m-wp-yhp" secondAttribute="centerX" id="0ap-0y-su3"/>
                             <constraint firstItem="cHU-I8-3IJ" firstAttribute="centerX" secondItem="F1m-wp-yhp" secondAttribute="centerX" id="8k8-iE-Hm5"/>
+                            <constraint firstItem="7JX-4d-km5" firstAttribute="top" secondItem="F1m-wp-yhp" secondAttribute="top" constant="279" id="LPN-WD-lkF"/>
+                            <constraint firstItem="7JX-4d-km5" firstAttribute="centerX" secondItem="F1m-wp-yhp" secondAttribute="centerX" id="Pgr-aF-fRR"/>
+                            <constraint firstItem="tr1-i7-CPl" firstAttribute="top" secondItem="F1m-wp-yhp" secondAttribute="top" constant="399" id="h7o-Z3-hO1"/>
                             <constraint firstItem="cHU-I8-3IJ" firstAttribute="top" secondItem="F1m-wp-yhp" secondAttribute="top" constant="101" id="mkQ-5P-RVz"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="F1m-wp-yhp"/>
@@ -165,11 +205,13 @@
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="animatedView" destination="cHU-I8-3IJ" id="WYd-HZ-hxh"/>
+                        <outlet property="leftAnimatedMiniView" destination="WbF-iq-3hR" id="dT3-2h-Nrk"/>
+                        <outlet property="rightAnimatedMiniView" destination="c7S-1Z-Rn7" id="hXM-4w-75m"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bjS-0X-Myg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="555" y="-254"/>
+            <point key="canvasLocation" x="553.62318840579712" y="-254.46428571428569"/>
         </scene>
         <!--Layers-->
         <scene sceneID="Pn2-Oi-mKh">
