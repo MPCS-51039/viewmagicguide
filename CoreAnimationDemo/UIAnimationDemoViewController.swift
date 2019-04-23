@@ -43,7 +43,10 @@ class UIAnimationDemoViewController: UIViewController {
             fadeAnimator.startAnimation()
         }
         spinAnimator.startAnimation()
-       
+        
+        //spring
+        //fractionComplete
+        //why switch the API
 
     }
 }

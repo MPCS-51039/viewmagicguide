@@ -128,7 +128,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pennyRolle" translatesAutoresizingMaskIntoConstraints="NO" id="oHq-AI-3bT">
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pennyRolle" translatesAutoresizingMaskIntoConstraints="NO" id="oHq-AI-3bT">
                                 <rect key="frame" x="6.6666666666666572" y="328.66666666666669" width="401" height="200.00000000000006"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="4k6-Rv-Kfu"/>
@@ -136,16 +136,28 @@
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="oHq-AI-3bT" firstAttribute="centerY" secondItem="VxX-kw-WG4" secondAttribute="centerY" id="uKU-XL-lRn"/>
                             <constraint firstItem="oHq-AI-3bT" firstAttribute="centerX" secondItem="VxX-kw-WG4" secondAttribute="centerX" id="ujZ-iD-uNS"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="VxX-kw-WG4"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Npv-24-eIC" appends="YES" id="gW7-YE-mcP"/>
+                        </connections>
                     </view>
                     <tabBarItem key="tabBarItem" title="Gestures" image="gestureDeSelected" selectedImage="gestureSelected" id="6fG-eh-Vxt"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="pennyImage" destination="oHq-AI-3bT" id="tWg-rl-smF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dvW-ha-hb7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <rotationGestureRecognizer id="Npv-24-eIC">
+                    <connections>
+                        <action selector="rotate:" destination="cME-Zw-NnW" id="bfK-Y8-i7K"/>
+                    </connections>
+                </rotationGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="450.72463768115944" y="600"/>
         </scene>
