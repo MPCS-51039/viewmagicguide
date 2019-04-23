@@ -9,6 +9,6 @@
 import Foundation
 import UIKit
 
-class MoreDrawingDemoViewController: UIViewController {
+class DrawingViewController: UIViewController {
     
 }

@@ -8,12 +8,12 @@
 
 import UIKit
 
-class MoreDrawingView: UIView {
-
+class DrawingView: UIView {
+    
     /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    */
+     // Only override draw() if you perform custom drawing.
+     // An empty implementation adversely affects performance during animation.
+     */
     
     override func draw(_ rect: CGRect) {
         let width = rect.width
@@ -26,7 +26,7 @@ class MoreDrawingView: UIView {
         
         lines.move(to: CGPoint(x: 0.0, y: 3 * height / 4))
         lines.addLine(to: CGPoint(x: width, y: 3 * height / 4))
-
+        
         lines.setLineDash([10, 5], count: 2, phase: 0)
         lines.lineWidth = 5
         lines.stroke()
@@ -60,3 +60,4 @@ class MoreDrawingView: UIView {
         arc.stroke()
     }
 }
+

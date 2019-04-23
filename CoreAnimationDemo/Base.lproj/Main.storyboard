@@ -118,7 +118,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E6W-Uq-CZf" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1639" y="-267"/>
+            <point key="canvasLocation" x="1139" y="-658"/>
         </scene>
         <!--Gesture Recognizer Demo View Controller-->
         <scene sceneID="xDd-LT-vhc">
@@ -152,7 +152,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bjS-0X-Myg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2233" y="402"/>
+            <point key="canvasLocation" x="1246" y="72"/>
         </scene>
         <!--Layer Demo View Controller-->
         <scene sceneID="Pn2-Oi-mKh">
@@ -222,17 +222,17 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eA4-CJ-J3C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-220.28985507246378" y="-828.34821428571422"/>
+            <point key="canvasLocation" x="404" y="-818"/>
         </scene>
-        <!--More Drawing Demo View Controller-->
+        <!--Drawing View Controller-->
         <scene sceneID="bwt-N7-IEr">
             <objects>
-                <viewController id="pkq-9v-kl2" customClass="MoreDrawingDemoViewController" customModule="CoreAnimationDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="pkq-9v-kl2" customClass="DrawingViewController" customModule="CoreAnimationDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1YL-AS-Qnb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tcl-mh-gxw" customClass="MoreDrawingView" customModule="CoreAnimationDemo" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tcl-mh-gxw" customClass="DrawingView" customModule="CoreAnimationDemo" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="44" width="414" height="769"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
@@ -250,7 +250,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6bm-3H-trF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="945" y="-808"/>
+            <point key="canvasLocation" x="-461" y="-935"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Zy4-Cl-iSE">
