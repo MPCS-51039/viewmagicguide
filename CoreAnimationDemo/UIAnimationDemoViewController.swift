@@ -43,6 +43,7 @@ class UIAnimationDemoViewController: UIViewController {
             fadeAnimator.startAnimation()
         }
         spinAnimator.startAnimation()
+       
 
     }
 }

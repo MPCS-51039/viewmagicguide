@@ -127,7 +127,19 @@
                     <view key="view" contentMode="scaleToFill" id="Cxg-aE-vZQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pennyRolle" translatesAutoresizingMaskIntoConstraints="NO" id="oHq-AI-3bT">
+                                <rect key="frame" x="6.6666666666666572" y="328.66666666666669" width="401" height="200.00000000000006"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="4k6-Rv-Kfu"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="oHq-AI-3bT" firstAttribute="centerY" secondItem="VxX-kw-WG4" secondAttribute="centerY" id="uKU-XL-lRn"/>
+                            <constraint firstItem="oHq-AI-3bT" firstAttribute="centerX" secondItem="VxX-kw-WG4" secondAttribute="centerX" id="ujZ-iD-uNS"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="VxX-kw-WG4"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Gestures" image="gestureDeSelected" selectedImage="gestureSelected" id="6fG-eh-Vxt"/>
@@ -135,7 +147,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dvW-ha-hb7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="719" y="816"/>
+            <point key="canvasLocation" x="450.72463768115944" y="600"/>
         </scene>
         <!--UI Animation-->
         <scene sceneID="59f-dE-0ZQ">
@@ -344,5 +356,6 @@
         <image name="layerAnimationSelected" width="16.666666030883789" height="16.666666030883789"/>
         <image name="layersDeSelected" width="16.666666030883789" height="16.666666030883789"/>
         <image name="layersSelected" width="16.666666030883789" height="16.666666030883789"/>
+        <image name="pennyRolle" width="401" height="665.66668701171875"/>
     </resources>
 </document>
