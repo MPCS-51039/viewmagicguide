@@ -67,19 +67,59 @@
 		60BA8EF822076C8D00643877 /* CoreAnimationDemo */ = {
 			isa = PBXGroup;
 			children = (
+				76115CE5226FBF7100595E55 /* UI Animation */,
+				76115CE3226FBF6000595E55 /* Gestures */,
+				76115CE1226FBF5200595E55 /* CALayer Animation */,
+				76115CE0226FBF4700595E55 /* Layers */,
+				76115CDE226FBF3100595E55 /* Drawing */,
 				60BA8EF922076C8D00643877 /* AppDelegate.swift */,
-				60BA8EFB22076C8D00643877 /* CoreAnimationDemoViewController.swift */,
 				60BA8EFD22076C8D00643877 /* Main.storyboard */,
-				76115CD7226E3FA700595E55 /* LayerViews.swift */,
-				76115CD5226E3F3400595E55 /* LayerDemoViewController.swift */,
-				76115CD9226EB9EE00595E55 /* DrawingViewController.swift */,
-				76115CCE226D2C2A00595E55 /* GestureRecognizerDemoViewController.swift */,
-				76115CCC226D2BA400595E55 /* UIAnimationDemoViewController.swift */,
 				60BA8F0022076C8E00643877 /* Assets.xcassets */,
 				60BA8F0222076C8E00643877 /* LaunchScreen.storyboard */,
 				60BA8F0522076C8E00643877 /* Info.plist */,
 			);
 			path = CoreAnimationDemo;
+			sourceTree = "<group>";
+		};
+		76115CDE226FBF3100595E55 /* Drawing */ = {
+			isa = PBXGroup;
+			children = (
+				76115CD9226EB9EE00595E55 /* DrawingViewController.swift */,
+			);
+			path = Drawing;
+			sourceTree = "<group>";
+		};
+		76115CE0226FBF4700595E55 /* Layers */ = {
+			isa = PBXGroup;
+			children = (
+				76115CD5226E3F3400595E55 /* LayerDemoViewController.swift */,
+				76115CD7226E3FA700595E55 /* LayerViews.swift */,
+			);
+			path = Layers;
+			sourceTree = "<group>";
+		};
+		76115CE1226FBF5200595E55 /* CALayer Animation */ = {
+			isa = PBXGroup;
+			children = (
+				60BA8EFB22076C8D00643877 /* CoreAnimationDemoViewController.swift */,
+			);
+			path = "CALayer Animation";
+			sourceTree = "<group>";
+		};
+		76115CE3226FBF6000595E55 /* Gestures */ = {
+			isa = PBXGroup;
+			children = (
+				76115CCE226D2C2A00595E55 /* GestureRecognizerDemoViewController.swift */,
+			);
+			path = Gestures;
+			sourceTree = "<group>";
+		};
+		76115CE5226FBF7100595E55 /* UI Animation */ = {
+			isa = PBXGroup;
+			children = (
+				76115CCC226D2BA400595E55 /* UIAnimationDemoViewController.swift */,
+			);
+			path = "UI Animation";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
