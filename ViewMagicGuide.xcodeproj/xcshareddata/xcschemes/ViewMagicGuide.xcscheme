@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "60BA8EF522076C8D00643877"
-               BuildableName = "CoreAnimationDemo.app"
-               BlueprintName = "CoreAnimationDemo"
-               ReferencedContainer = "container:CoreAnimationDemo.xcodeproj">
+               BuildableName = "ViewMagicGuide.app"
+               BlueprintName = "ViewMagicGuide"
+               ReferencedContainer = "container:ViewMagicGuide.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "60BA8EF522076C8D00643877"
-            BuildableName = "CoreAnimationDemo.app"
-            BlueprintName = "CoreAnimationDemo"
-            ReferencedContainer = "container:CoreAnimationDemo.xcodeproj">
+            BuildableName = "ViewMagicGuide.app"
+            BlueprintName = "ViewMagicGuide"
+            ReferencedContainer = "container:ViewMagicGuide.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "60BA8EF522076C8D00643877"
-            BuildableName = "CoreAnimationDemo.app"
-            BlueprintName = "CoreAnimationDemo"
-            ReferencedContainer = "container:CoreAnimationDemo.xcodeproj">
+            BuildableName = "ViewMagicGuide.app"
+            BlueprintName = "ViewMagicGuide"
+            ReferencedContainer = "container:ViewMagicGuide.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "60BA8EF522076C8D00643877"
-            BuildableName = "CoreAnimationDemo.app"
-            BlueprintName = "CoreAnimationDemo"
-            ReferencedContainer = "container:CoreAnimationDemo.xcodeproj">
+            BuildableName = "ViewMagicGuide.app"
+            BlueprintName = "ViewMagicGuide"
+            ReferencedContainer = "container:ViewMagicGuide.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

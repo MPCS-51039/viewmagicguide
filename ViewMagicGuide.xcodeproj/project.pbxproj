@@ -21,7 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		60BA8EF622076C8D00643877 /* CoreAnimationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreAnimationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		60BA8EF622076C8D00643877 /* ViewMagicGuide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViewMagicGuide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60BA8EF922076C8D00643877 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		60BA8EFB22076C8D00643877 /* CoreAnimationDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreAnimationDemoViewController.swift; sourceTree = "<group>"; };
 		60BA8EFE22076C8D00643877 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -51,7 +51,7 @@
 			isa = PBXGroup;
 			children = (
 				76115CDB226EBA5E00595E55 /* DrawingView.swift */,
-				60BA8EF822076C8D00643877 /* CoreAnimationDemo */,
+				60BA8EF822076C8D00643877 /* ViewMagicGuide */,
 				60BA8EF722076C8D00643877 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -59,12 +59,12 @@
 		60BA8EF722076C8D00643877 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				60BA8EF622076C8D00643877 /* CoreAnimationDemo.app */,
+				60BA8EF622076C8D00643877 /* ViewMagicGuide.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		60BA8EF822076C8D00643877 /* CoreAnimationDemo */ = {
+		60BA8EF822076C8D00643877 /* ViewMagicGuide */ = {
 			isa = PBXGroup;
 			children = (
 				76115CE5226FBF7100595E55 /* UI Animation */,
@@ -78,7 +78,7 @@
 				60BA8F0222076C8E00643877 /* LaunchScreen.storyboard */,
 				60BA8F0522076C8E00643877 /* Info.plist */,
 			);
-			path = CoreAnimationDemo;
+			path = ViewMagicGuide;
 			sourceTree = "<group>";
 		};
 		76115CDE226FBF3100595E55 /* Drawing */ = {
@@ -125,9 +125,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		60BA8EF522076C8D00643877 /* CoreAnimationDemo */ = {
+		60BA8EF522076C8D00643877 /* ViewMagicGuide */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 60BA8F0822076C8E00643877 /* Build configuration list for PBXNativeTarget "CoreAnimationDemo" */;
+			buildConfigurationList = 60BA8F0822076C8E00643877 /* Build configuration list for PBXNativeTarget "ViewMagicGuide" */;
 			buildPhases = (
 				60BA8EF222076C8D00643877 /* Sources */,
 				60BA8EF322076C8D00643877 /* Frameworks */,
@@ -137,9 +137,9 @@
 			);
 			dependencies = (
 			);
-			name = CoreAnimationDemo;
+			name = ViewMagicGuide;
 			productName = CoreAnimationDemo;
-			productReference = 60BA8EF622076C8D00643877 /* CoreAnimationDemo.app */;
+			productReference = 60BA8EF622076C8D00643877 /* ViewMagicGuide.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -158,7 +158,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 60BA8EF122076C8D00643877 /* Build configuration list for PBXProject "CoreAnimationDemo" */;
+			buildConfigurationList = 60BA8EF122076C8D00643877 /* Build configuration list for PBXProject "ViewMagicGuide" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -171,7 +171,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				60BA8EF522076C8D00643877 /* CoreAnimationDemo */,
+				60BA8EF522076C8D00643877 /* ViewMagicGuide */,
 			);
 		};
 /* End PBXProject section */
@@ -349,12 +349,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MED853AU4Q;
-				INFOPLIST_FILE = CoreAnimationDemo/Info.plist;
+				INFOPLIST_FILE = ViewMagicGuide/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.susanstevens.CoreAnimationDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chelseatroy.ViewMagicGuide;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -367,12 +367,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MED853AU4Q;
-				INFOPLIST_FILE = CoreAnimationDemo/Info.plist;
+				INFOPLIST_FILE = ViewMagicGuide/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.susanstevens.CoreAnimationDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chelseatroy.ViewMagicGuide;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -382,7 +382,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		60BA8EF122076C8D00643877 /* Build configuration list for PBXProject "CoreAnimationDemo" */ = {
+		60BA8EF122076C8D00643877 /* Build configuration list for PBXProject "ViewMagicGuide" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				60BA8F0622076C8E00643877 /* Debug */,
@@ -391,7 +391,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		60BA8F0822076C8E00643877 /* Build configuration list for PBXNativeTarget "CoreAnimationDemo" */ = {
+		60BA8F0822076C8E00643877 /* Build configuration list for PBXNativeTarget "ViewMagicGuide" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				60BA8F0922076C8E00643877 /* Debug */,
