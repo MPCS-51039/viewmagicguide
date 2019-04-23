@@ -12,12 +12,13 @@
 		60BA8EFF22076C8D00643877 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60BA8EFD22076C8D00643877 /* Main.storyboard */; };
 		60BA8F0122076C8E00643877 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60BA8F0022076C8E00643877 /* Assets.xcassets */; };
 		60BA8F0422076C8E00643877 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60BA8F0222076C8E00643877 /* LaunchScreen.storyboard */; };
-		76115CC9226D2A1E00595E55 /* DrawingDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76115CC8226D2A1E00595E55 /* DrawingDemoViewController.swift */; };
 		76115CCB226D2A6300595E55 /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76115CCA226D2A6300595E55 /* DrawingView.swift */; };
 		76115CCD226D2BA400595E55 /* UIAnimationDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76115CCC226D2BA400595E55 /* UIAnimationDemoViewController.swift */; };
 		76115CCF226D2C2A00595E55 /* GestureRecognizerDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76115CCE226D2C2A00595E55 /* GestureRecognizerDemoViewController.swift */; };
 		76115CD2226D2FF500595E55 /* MoreDrawingDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76115CD1226D2FF500595E55 /* MoreDrawingDemoViewController.swift */; };
 		76115CD4226D309900595E55 /* MoreDrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76115CD3226D309900595E55 /* MoreDrawingView.swift */; };
+		76115CD6226E3F3400595E55 /* LayerDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76115CD5226E3F3400595E55 /* LayerDemoViewController.swift */; };
+		76115CD8226E3FA700595E55 /* LayerViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76115CD7226E3FA700595E55 /* LayerViews.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,12 +29,13 @@
 		60BA8F0022076C8E00643877 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		60BA8F0322076C8E00643877 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		60BA8F0522076C8E00643877 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		76115CC8226D2A1E00595E55 /* DrawingDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingDemoViewController.swift; sourceTree = "<group>"; };
 		76115CCA226D2A6300595E55 /* DrawingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingView.swift; sourceTree = "<group>"; };
 		76115CCC226D2BA400595E55 /* UIAnimationDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAnimationDemoViewController.swift; sourceTree = "<group>"; };
 		76115CCE226D2C2A00595E55 /* GestureRecognizerDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureRecognizerDemoViewController.swift; sourceTree = "<group>"; };
 		76115CD1226D2FF500595E55 /* MoreDrawingDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreDrawingDemoViewController.swift; sourceTree = "<group>"; };
 		76115CD3226D309900595E55 /* MoreDrawingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreDrawingView.swift; sourceTree = "<group>"; };
+		76115CD5226E3F3400595E55 /* LayerDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayerDemoViewController.swift; sourceTree = "<group>"; };
+		76115CD7226E3FA700595E55 /* LayerViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayerViews.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,11 +71,12 @@
 				60BA8EF922076C8D00643877 /* AppDelegate.swift */,
 				60BA8EFB22076C8D00643877 /* CoreAnimationDemoViewController.swift */,
 				60BA8EFD22076C8D00643877 /* Main.storyboard */,
-				76115CD3226D309900595E55 /* MoreDrawingView.swift */,
+				76115CD7226E3FA700595E55 /* LayerViews.swift */,
+				76115CD5226E3F3400595E55 /* LayerDemoViewController.swift */,
 				76115CD1226D2FF500595E55 /* MoreDrawingDemoViewController.swift */,
+				76115CD3226D309900595E55 /* MoreDrawingView.swift */,
 				76115CCE226D2C2A00595E55 /* GestureRecognizerDemoViewController.swift */,
 				76115CCC226D2BA400595E55 /* UIAnimationDemoViewController.swift */,
-				76115CC8226D2A1E00595E55 /* DrawingDemoViewController.swift */,
 				76115CCA226D2A6300595E55 /* DrawingView.swift */,
 				60BA8F0022076C8E00643877 /* Assets.xcassets */,
 				60BA8F0222076C8E00643877 /* LaunchScreen.storyboard */,
@@ -155,11 +158,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				76115CD2226D2FF500595E55 /* MoreDrawingDemoViewController.swift in Sources */,
-				76115CC9226D2A1E00595E55 /* DrawingDemoViewController.swift in Sources */,
+				76115CD6226E3F3400595E55 /* LayerDemoViewController.swift in Sources */,
 				76115CD4226D309900595E55 /* MoreDrawingView.swift in Sources */,
 				60BA8EFC22076C8D00643877 /* CoreAnimationDemoViewController.swift in Sources */,
 				60BA8EFA22076C8D00643877 /* AppDelegate.swift in Sources */,
 				76115CCB226D2A6300595E55 /* DrawingView.swift in Sources */,
+				76115CD8226E3FA700595E55 /* LayerViews.swift in Sources */,
 				76115CCD226D2BA400595E55 /* UIAnimationDemoViewController.swift in Sources */,
 				76115CCF226D2C2A00595E55 /* GestureRecognizerDemoViewController.swift in Sources */,
 			);

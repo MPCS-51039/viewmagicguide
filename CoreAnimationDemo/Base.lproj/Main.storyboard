@@ -135,7 +135,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dvW-ha-hb7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="536" y="644"/>
+            <point key="canvasLocation" x="719" y="816"/>
         </scene>
         <!--Animation Demo View Controller-->
         <scene sceneID="59f-dE-0ZQ">
@@ -152,16 +152,69 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bjS-0X-Myg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1738" y="435"/>
+            <point key="canvasLocation" x="2233" y="402"/>
         </scene>
-        <!--Drawing Demo View Controller-->
+        <!--Layer Demo View Controller-->
         <scene sceneID="Pn2-Oi-mKh">
             <objects>
-                <viewController id="M41-ld-NmP" customClass="DrawingDemoViewController" customModule="CoreAnimationDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="M41-ld-NmP" customClass="LayerDemoViewController" customModule="CoreAnimationDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wmk-ZM-Rjr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Dqe-V0-DtZ">
+                                <rect key="frame" x="87" y="78" width="240" height="701"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Colors and Corners" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qzp-gg-Fug">
+                                        <rect key="frame" x="46" y="0.0" width="148" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="whv-S0-KH9" customClass="BackgroundLayerView" customModule="CoreAnimationDemo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="40.333333333333314" width="240" height="180"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="240" id="2dz-9H-BkA"/>
+                                            <constraint firstAttribute="height" constant="180" id="soK-bA-qi3" userLabel="height = 180"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Drop Shadows" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3rH-ty-KZq">
+                                        <rect key="frame" x="64.333333333333343" y="240.33333333333331" width="111.66666666666666" height="20.333333333333314"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XHa-fH-A1v" customClass="DropShadowLayerView" customModule="CoreAnimationDemo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="280.66666666666669" width="240" height="180"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="240" id="0xv-Jh-xp6"/>
+                                            <constraint firstAttribute="height" constant="180" id="I9g-0D-D3u"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gradients" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BJk-V5-Jbc">
+                                        <rect key="frame" x="83" y="480.66666666666663" width="74.333333333333314" height="20.333333333333314"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nmn-bX-Jok" customClass="GradientLayerView" customModule="CoreAnimationDemo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="521" width="240" height="180"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="180" id="AAJ-IV-AYw"/>
+                                            <constraint firstAttribute="width" constant="240" id="he9-Dm-5XF"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Dqe-V0-DtZ" firstAttribute="centerX" secondItem="VvB-Oc-RQH" secondAttribute="centerX" id="IwN-Av-fFp"/>
+                            <constraint firstItem="Dqe-V0-DtZ" firstAttribute="centerY" secondItem="VvB-Oc-RQH" secondAttribute="centerY" id="aQl-3n-T3D"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="VvB-Oc-RQH"/>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="recents" id="OPa-96-hv7"/>
@@ -169,7 +222,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eA4-CJ-J3C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-62" y="-889"/>
+            <point key="canvasLocation" x="-220.28985507246378" y="-828.34821428571422"/>
         </scene>
         <!--More Drawing Demo View Controller-->
         <scene sceneID="bwt-N7-IEr">
@@ -209,8 +262,8 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="M41-ld-NmP" kind="relationship" relationship="viewControllers" id="n4e-SA-dxf"/>
                         <segue destination="pkq-9v-kl2" kind="relationship" relationship="viewControllers" id="2yJ-Yx-WPD"/>
+                        <segue destination="M41-ld-NmP" kind="relationship" relationship="viewControllers" id="n4e-SA-dxf"/>
                         <segue destination="BLQ-7n-9IN" kind="relationship" relationship="viewControllers" id="G2j-QS-gbL"/>
                         <segue destination="ici-yN-6HK" kind="relationship" relationship="viewControllers" id="g4w-uT-e0N"/>
                         <segue destination="cME-Zw-NnW" kind="relationship" relationship="viewControllers" id="vyg-SY-zjk"/>
