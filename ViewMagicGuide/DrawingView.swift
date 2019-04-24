@@ -1,5 +1,5 @@
 //
-//  MoreDrawingView.swift
+//  DrawingView.swift
 //  CoreAnimationDemo
 //
 //  Created by Chelsea Troy on 4/21/19.

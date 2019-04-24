@@ -17,7 +17,7 @@
 		76115CD6226E3F3400595E55 /* LayerDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76115CD5226E3F3400595E55 /* LayerDemoViewController.swift */; };
 		76115CD8226E3FA700595E55 /* LayerViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76115CD7226E3FA700595E55 /* LayerViews.swift */; };
 		76115CDA226EB9EE00595E55 /* DrawingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76115CD9226EB9EE00595E55 /* DrawingViewController.swift */; };
-		76115CDC226EBA5E00595E55 /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76115CDB226EBA5E00595E55 /* DrawingView.swift */; };
+		76115CE92270022100595E55 /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76115CE82270022100595E55 /* DrawingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +33,7 @@
 		76115CD5226E3F3400595E55 /* LayerDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayerDemoViewController.swift; sourceTree = "<group>"; };
 		76115CD7226E3FA700595E55 /* LayerViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayerViews.swift; sourceTree = "<group>"; };
 		76115CD9226EB9EE00595E55 /* DrawingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingViewController.swift; sourceTree = "<group>"; };
-		76115CDB226EBA5E00595E55 /* DrawingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DrawingView.swift; path = ../../DrawingView.swift; sourceTree = "<group>"; };
+		76115CE82270022100595E55 /* DrawingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DrawingView.swift; path = ViewMagicGuide/DrawingView.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,7 +83,7 @@
 		76115CDE226FBF3100595E55 /* Drawing */ = {
 			isa = PBXGroup;
 			children = (
-				76115CDB226EBA5E00595E55 /* DrawingView.swift */,
+				76115CE82270022100595E55 /* DrawingView.swift */,
 				76115CD9226EB9EE00595E55 /* DrawingViewController.swift */,
 			);
 			path = Drawing;
@@ -197,7 +197,7 @@
 				76115CD6226E3F3400595E55 /* LayerDemoViewController.swift in Sources */,
 				60BA8EFC22076C8D00643877 /* CoreAnimationDemoViewController.swift in Sources */,
 				60BA8EFA22076C8D00643877 /* AppDelegate.swift in Sources */,
-				76115CDC226EBA5E00595E55 /* DrawingView.swift in Sources */,
+				76115CE92270022100595E55 /* DrawingView.swift in Sources */,
 				76115CDA226EB9EE00595E55 /* DrawingViewController.swift in Sources */,
 				76115CD8226E3FA700595E55 /* LayerViews.swift in Sources */,
 				76115CCD226D2BA400595E55 /* UIAnimationDemoViewController.swift in Sources */,

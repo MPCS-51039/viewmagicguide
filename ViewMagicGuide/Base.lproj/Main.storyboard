@@ -13,7 +13,7 @@
         <!--Core Animations-->
         <scene sceneID="tJl-81-Zw7">
             <objects>
-                <viewController id="BLQ-7n-9IN" customClass="CoreAnimationDemoViewController" customModule="CoreAnimationDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BLQ-7n-9IN" customClass="CoreAnimationDemoViewController" customModule="ViewMagicGuide" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yo6-Wz-xed">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -123,16 +123,20 @@
         <!--Gestures-->
         <scene sceneID="xDd-LT-vhc">
             <objects>
-                <viewController id="cME-Zw-NnW" customClass="GestureRecognizerDemoViewController" customModule="CoreAnimationDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="cME-Zw-NnW" customClass="GestureRecognizerDemoViewController" customModule="ViewMagicGuide" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Cxg-aE-vZQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pennyRolle" translatesAutoresizingMaskIntoConstraints="NO" id="oHq-AI-3bT">
                                 <rect key="frame" x="6.6666666666666572" y="328.66666666666669" width="401" height="200.00000000000006"/>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="4k6-Rv-Kfu"/>
                                 </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="ffE-fK-r8b" appends="YES" id="srO-vw-QO1"/>
+                                </connections>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -142,9 +146,6 @@
                             <constraint firstItem="oHq-AI-3bT" firstAttribute="centerX" secondItem="VxX-kw-WG4" secondAttribute="centerX" id="ujZ-iD-uNS"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="VxX-kw-WG4"/>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="Npv-24-eIC" appends="YES" id="gW7-YE-mcP"/>
-                        </connections>
                     </view>
                     <tabBarItem key="tabBarItem" title="Gestures" image="gestureDeSelected" selectedImage="gestureSelected" id="6fG-eh-Vxt"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
@@ -153,9 +154,9 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dvW-ha-hb7" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <rotationGestureRecognizer id="Npv-24-eIC">
+                <rotationGestureRecognizer id="ffE-fK-r8b">
                     <connections>
-                        <action selector="rotate:" destination="cME-Zw-NnW" id="bfK-Y8-i7K"/>
+                        <action selector="rotate:" destination="cME-Zw-NnW" id="oiC-aj-VIJ"/>
                     </connections>
                 </rotationGestureRecognizer>
             </objects>
@@ -164,7 +165,7 @@
         <!--UI Animation-->
         <scene sceneID="59f-dE-0ZQ">
             <objects>
-                <viewController id="ici-yN-6HK" customClass="UIAnimationDemoViewController" customModule="CoreAnimationDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ici-yN-6HK" customClass="UIAnimationDemoViewController" customModule="ViewMagicGuide" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4n6-P0-h6o">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -240,7 +241,7 @@
         <!--Layers-->
         <scene sceneID="Pn2-Oi-mKh">
             <objects>
-                <viewController id="M41-ld-NmP" customClass="LayerDemoViewController" customModule="CoreAnimationDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="M41-ld-NmP" customClass="LayerDemoViewController" customModule="ViewMagicGuide" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wmk-ZM-Rjr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -254,7 +255,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="whv-S0-KH9" customClass="BackgroundLayerView" customModule="CoreAnimationDemo" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="whv-S0-KH9" customClass="BackgroundLayerView" customModule="ViewMagicGuide" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="40.333333333333314" width="240" height="180"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -268,7 +269,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XHa-fH-A1v" customClass="DropShadowLayerView" customModule="CoreAnimationDemo" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XHa-fH-A1v" customClass="DropShadowLayerView" customModule="ViewMagicGuide" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="280.66666666666669" width="240" height="180"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -282,7 +283,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nmn-bX-Jok" customClass="GradientLayerView" customModule="CoreAnimationDemo" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nmn-bX-Jok" customClass="GradientLayerView" customModule="ViewMagicGuide" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="521" width="240" height="180"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -310,12 +311,12 @@
         <!--Drawing-->
         <scene sceneID="bwt-N7-IEr">
             <objects>
-                <viewController id="pkq-9v-kl2" customClass="DrawingViewController" customModule="CoreAnimationDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="pkq-9v-kl2" customClass="DrawingViewController" customModule="ViewMagicGuide" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1YL-AS-Qnb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tcl-mh-gxw" customClass="DrawingView" customModule="CoreAnimationDemo" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tcl-mh-gxw" customClass="DrawingView" customModule="ViewMagicGuide" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="44" width="414" height="769"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
@@ -341,6 +342,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="CKb-e1-aWi" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="uXI-fS-L0p">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
