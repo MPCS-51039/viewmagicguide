@@ -15,6 +15,7 @@ class UIAnimationDemoViewController: UIViewController {
     @IBOutlet weak var rightAnimatedMiniView: UIView!
     @IBOutlet weak var leftAnimatedMiniView: UIView!
     
+    
     @IBAction func didTapTopView(_ sender: Any) {
         let animator = UIViewPropertyAnimator(
             duration: 0.5,
@@ -24,6 +25,18 @@ class UIAnimationDemoViewController: UIViewController {
                 self.animatedView.transform = CGAffineTransform(rotationAngle: CGFloat.pi / 4)
         }
         animator.startAnimation()
+        
+//        UIView.animate(withDuration: 0.5,
+//                       delay: 0.0,
+//                       options: [
+//                        .autoreverse,
+//                        .repeat,
+//                        ],
+//                       animations: {
+////            UIView.setAnimationRepeatCount(4)
+//
+//            self.animatedView.frame.size = CGSize(width: 50, height: 50)
+//        })
     }
     
     @IBAction func didTapBottomViews(_ sender: Any) {
@@ -42,11 +55,6 @@ class UIAnimationDemoViewController: UIViewController {
         spinAnimator.addCompletion { _ in
             fadeAnimator.startAnimation()
         }
-        spinAnimator.startAnimation()
-        
-        //spring
-        //fractionComplete
-        //why switch the API
-
+        spinAnimator.startAnimation()        
     }
 }
