@@ -26,17 +26,19 @@ class UIAnimationDemoViewController: UIViewController {
         }
         animator.startAnimation()
         
-//        UIView.animate(withDuration: 0.5,
-//                       delay: 0.0,
-//                       options: [
-//                        .autoreverse,
-//                        .repeat,
-//                        ],
-//                       animations: {
-////            UIView.setAnimationRepeatCount(4)
+//            UIView.animate(withDuration: 0.5,
+//                           delay: 0.0,
+//                           options: [
+//                            .autoreverse,
+//                            .repeat,
+//                            ],
+//                           animations: {
+////                UIView.setAnimationRepeatCount(4)
 //
-//            self.animatedView.frame.size = CGSize(width: 50, height: 50)
-//        })
+//                self.animatedView.frame.size = CGSize(width: 50, height: 50)
+//                self.animatedView.transform = CGAffineTransform(rotationAngle: CGFloat.pi / 4)
+//
+//            })
     }
     
     @IBAction func didTapBottomViews(_ sender: Any) {

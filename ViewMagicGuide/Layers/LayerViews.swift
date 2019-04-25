@@ -36,7 +36,7 @@ class GradientLayerView: UIView {
         ]
         
         gradientLayer.startPoint = CGPoint(x: 0, y: 0)
-        gradientLayer.endPoint = CGPoint(x: 1, y: 1)
+        gradientLayer.endPoint = CGPoint(x: 0, y: 1)
         
         gradientLayer.cornerRadius = 20
         

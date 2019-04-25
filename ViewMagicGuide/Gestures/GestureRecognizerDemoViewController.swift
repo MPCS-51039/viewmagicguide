@@ -18,21 +18,21 @@ class GestureRecognizerDemoViewController: UIViewController {
     }
     
     @objc func didPan(_ recognizer: UIPanGestureRecognizer) {
-
         let translation = recognizer.translation(in: self.view)
-        if let tokenView = recognizer.view {
-            tokenView.center = CGPoint(x:self.pennyImage.center.x + translation.x,
-                                       y:self.pennyImage.center.y + translation.y)
+        if let penny = recognizer.view {
+            penny.center = CGPoint(
+                x:penny.center.x + translation.x,
+                y:penny.center.y + translation.y
+            )
             recognizer.setTranslation(CGPoint.zero, in: self.view)
         }
-
     }
     
     @IBAction func rotate(_ sender: UIRotationGestureRecognizer) {
         guard let penny = sender.view else {return}
         
         if sender.state == .began || sender.state == .changed {
-            penny.transform = sender.view!.transform.rotated(by: sender.rotation)
+            penny.transform = penny.transform.rotated(by: sender.rotation)
             sender.rotation = 0
         }
     }
