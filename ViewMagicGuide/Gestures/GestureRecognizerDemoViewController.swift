@@ -37,6 +37,14 @@ class GestureRecognizerDemoViewController: UIViewController {
         }
     }
     
-//Add Pinch Gesture Recognizer
-    
+    @IBAction func didPinch(_ recognizer: UIPinchGestureRecognizer) {
+        
+        guard let penny = recognizer.view else {return}
+        
+        penny.transform = penny.transform.scaledBy(
+            x: recognizer.scale,
+            y: recognizer.scale
+        )
+        recognizer.scale = 1
+    }
 }

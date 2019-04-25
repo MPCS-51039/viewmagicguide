@@ -136,6 +136,7 @@
                                 </constraints>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="ffE-fK-r8b" appends="YES" id="srO-vw-QO1"/>
+                                    <outletCollection property="gestureRecognizers" destination="y7n-Px-ali" appends="YES" id="CZ1-v9-6by"/>
                                 </connections>
                             </imageView>
                         </subviews>
@@ -159,6 +160,11 @@
                         <action selector="rotate:" destination="cME-Zw-NnW" id="oiC-aj-VIJ"/>
                     </connections>
                 </rotationGestureRecognizer>
+                <pinchGestureRecognizer id="y7n-Px-ali">
+                    <connections>
+                        <action selector="didPinch:" destination="cME-Zw-NnW" id="cLS-M2-cJc"/>
+                    </connections>
+                </pinchGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="450.72463768115944" y="600"/>
         </scene>
