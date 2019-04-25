@@ -28,12 +28,12 @@ class GestureRecognizerDemoViewController: UIViewController {
         }
     }
     
-    @IBAction func rotate(_ sender: UIRotationGestureRecognizer) {
-        guard let penny = sender.view else {return}
+    @IBAction func rotate(_ recognizer: UIRotationGestureRecognizer) {
+        guard let penny = recognizer.view else {return}
         
-        if sender.state == .began || sender.state == .changed {
-            penny.transform = penny.transform.rotated(by: sender.rotation)
-            sender.rotation = 0
+        if recognizer.state == .began || recognizer.state == .changed {
+            penny.transform = penny.transform.rotated(by: recognizer.rotation)
+            recognizer.rotation = 0
         }
     }
     
