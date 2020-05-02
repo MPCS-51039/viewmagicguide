@@ -25,32 +25,20 @@ class UIAnimationDemoViewController: UIViewController {
                 self.animatedView.transform = CGAffineTransform(rotationAngle: CGFloat.pi / 4)
         }
         animator.startAnimation()
-        
-//            UIView.animate(withDuration: 0.5,
-//                           delay: 0.0,
-//                           options: [
-//                            .autoreverse,
-//                            .repeat,
-//                            ],
-//                           animations: {
-////                UIView.setAnimationRepeatCount(4)
-//
-//                self.animatedView.frame.size = CGSize(width: 50, height: 50)
-//                self.animatedView.transform = CGAffineTransform(rotationAngle: CGFloat.pi / 4)
-//
-//            })
     }
     
     @IBAction func didTapBottomViews(_ sender: Any) {
         let spinAnimator = UIViewPropertyAnimator(
             duration: 0.5,
-            curve: .easeIn) {                self.leftAnimatedMiniView.transform = CGAffineTransform(rotationAngle: CGFloat.pi / 2)
+            curve: .easeIn) {
+                self.leftAnimatedMiniView.transform = CGAffineTransform(rotationAngle: CGFloat.pi / 2)
                 self.rightAnimatedMiniView.transform = CGAffineTransform(rotationAngle: CGFloat.pi / 2)
         }
         
         let fadeAnimator = UIViewPropertyAnimator(
             duration: 0.5,
-            curve: .easeIn) {                self.leftAnimatedMiniView.alpha = 0
+            curve: .easeIn) {
+                self.leftAnimatedMiniView.alpha = 0
                 self.rightAnimatedMiniView.alpha = 0
         }
         

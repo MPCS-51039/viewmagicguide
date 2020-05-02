@@ -41,6 +41,7 @@ class GradientLayerView: UIView {
         gradientLayer.cornerRadius = 20
         
         layer.addSublayer(gradientLayer)
+        layer.backgroundColor = UIColor.clear.cgColor
     }
 }
 

@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CKb-e1-aWi">
-    <device id="retina6_5" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CKb-e1-aWi">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -99,7 +97,7 @@
                                 </constraints>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.43374055624008179" green="0.90852707624435425" blue="0.74673086404800415" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="z9o-8U-Pbh" firstAttribute="centerX" secondItem="yo6-Wz-xed" secondAttribute="centerX" id="3Nw-pw-0cb"/>
                             <constraint firstAttribute="bottomMargin" secondItem="z9o-8U-Pbh" secondAttribute="bottom" constant="-65" id="PYL-2E-QCV"/>
@@ -140,7 +138,7 @@
                                 </connections>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.91431957483291626" green="0.92248576879501343" blue="0.56485438346862793" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="oHq-AI-3bT" firstAttribute="centerY" secondItem="VxX-kw-WG4" secondAttribute="centerY" id="uKU-XL-lRn"/>
@@ -221,7 +219,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.91538816690444946" green="0.9183235764503479" blue="0.5831177830696106" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="tr1-i7-CPl" firstAttribute="centerX" secondItem="F1m-wp-yhp" secondAttribute="centerX" id="0ap-0y-su3"/>
                             <constraint firstItem="cHU-I8-3IJ" firstAttribute="centerX" secondItem="F1m-wp-yhp" secondAttribute="centerX" id="8k8-iE-Hm5"/>
@@ -300,7 +298,7 @@
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.41355574131011963" green="0.91385167837142944" blue="0.74215966463088989" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Dqe-V0-DtZ" firstAttribute="centerX" secondItem="VvB-Oc-RQH" secondAttribute="centerX" id="IwN-Av-fFp"/>
                             <constraint firstItem="Dqe-V0-DtZ" firstAttribute="centerY" secondItem="VvB-Oc-RQH" secondAttribute="centerY" id="aQl-3n-T3D"/>
@@ -312,7 +310,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eA4-CJ-J3C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-454" y="-1025"/>
+            <point key="canvasLocation" x="-799" y="-1126"/>
         </scene>
         <!--Drawing-->
         <scene sceneID="bwt-N7-IEr">
@@ -324,7 +322,7 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tcl-mh-gxw" customClass="DrawingView" customModule="ViewMagicGuide" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="44" width="414" height="769"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.43374055624008179" green="0.90852707624435425" blue="0.74673086404800415" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -362,7 +360,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="weV-45-C0G" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2458" y="110"/>
+            <point key="canvasLocation" x="-2646" y="106"/>
         </scene>
     </scenes>
     <resources>
