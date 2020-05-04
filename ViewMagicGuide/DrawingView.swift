@@ -19,26 +19,37 @@ class DrawingView: UIView {
         let width = rect.width
         let height = rect.height
         
-        drawLines(width, height)
-        drawCircle(width, height)
-        drawArc(width, height)
+        drawFace(width, height)
+        drawMouth(width, height)
+        drawEyes(width, height)
     }
     
-    func drawLines(_ width: CGFloat, _ height: CGFloat) {
-        let lines = UIBezierPath()
+    func drawEyes(_ width: CGFloat, _ height: CGFloat) {
+        let leftEye = UIBezierPath(ovalIn:
+            CGRect(x: width * 0.41,
+                   y: (height / 2) - (width / 8),
+                   width: width / 20,
+                   height: height / 20
+            )
+        )
         
-        lines.move(to: CGPoint(x: 0.0, y: height / 4))
-        lines.addLine(to: CGPoint(x: width, y: height / 4))
+        let rightEye = UIBezierPath(ovalIn:
+            CGRect(x: width * 0.53,
+                   y: (height / 2) - (width / 8),
+                   width: width / 20,
+                   height: height / 20
+            )
+        )
         
-        lines.addLine(to: CGPoint(x: 0.0, y: 3 * height / 4))
-        lines.addLine(to: CGPoint(x: width, y: 3 * height / 4))
+        UIColor.black.setFill()
+        leftEye.fill()
+        rightEye.fill()
         
-        lines.setLineDash([10, 5], count: 2, phase: 0)
-        lines.lineWidth = 5
-        lines.stroke()
+        leftEye.stroke()
+        rightEye.stroke()
     }
     
-    func drawCircle(_ width: CGFloat, _ height: CGFloat) {
+    func drawFace(_ width: CGFloat, _ height: CGFloat) {
         let circle = UIBezierPath(ovalIn:
             CGRect(x: width / 4,
                    y: (height / 2) - (width / 4),
@@ -48,19 +59,19 @@ class DrawingView: UIView {
         )
         circle.lineWidth = 10
         
-        UIColor.white.setFill()
+        UIColor.yellow.setFill()
         circle.fill()
         
-        UIColor.purple.setStroke()
+        UIColor.black.setStroke()
         circle.stroke()
     }
     
-    func drawArc(_ width: CGFloat, _ height: CGFloat) {
+    func drawMouth(_ width: CGFloat, _ height: CGFloat) {
         let arc = UIBezierPath(
             arcCenter: CGPoint(x: width / 2, y: height / 2),
-            radius: width / 3,
+            radius: width / 6,
             startAngle: 0,
-            endAngle: 2.5 * CGFloat.pi / 2,
+            endAngle: CGFloat.pi,
             clockwise: true
         )
         UIColor.black.setStroke()
@@ -68,7 +79,6 @@ class DrawingView: UIView {
         arc.lineWidth = 12
         arc.lineCapStyle = .round
         arc.stroke()
-
     }
 }
 
