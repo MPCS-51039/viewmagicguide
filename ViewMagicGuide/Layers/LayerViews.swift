@@ -23,6 +23,7 @@ class DropShadowLayerView: UIView {
         layer.shadowOpacity = 0.7
         layer.shadowRadius = 10
         layer.shadowOffset = CGSize(width: 10, height: 10)
+        layer.opacity = 0.5
     }
 }
 
