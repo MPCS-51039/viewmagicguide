@@ -245,7 +245,7 @@
         <!--Layers-->
         <scene sceneID="Pn2-Oi-mKh">
             <objects>
-                <viewController id="M41-ld-NmP" customClass="LayerDemoViewController" customModule="ViewMagicGuide" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="M41-ld-NmP" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wmk-ZM-Rjr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -315,7 +315,7 @@
         <!--Drawing-->
         <scene sceneID="bwt-N7-IEr">
             <objects>
-                <viewController id="pkq-9v-kl2" customClass="DrawingViewController" customModule="ViewMagicGuide" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="pkq-9v-kl2" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1YL-AS-Qnb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -71,7 +71,6 @@ class CoreAnimationDemoViewController: UIViewController {
         
         shapeLayer.add(strokeAnimation, forKey: nil)
         shapeLayer.add(colorAnimation, forKey: nil)
-        
         keyframeAnimationView.layer.addSublayer(shapeLayer)
     }
     
