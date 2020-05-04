@@ -35,15 +35,25 @@ class UIAnimationDemoViewController: UIViewController {
                 self.rightAnimatedMiniView.transform = CGAffineTransform(rotationAngle: CGFloat.pi / 2)
         }
         
-        let fadeAnimator = UIViewPropertyAnimator(
-            duration: 0.5,
+        let fadeOut = UIViewPropertyAnimator(
+            duration: 0.3,
             curve: .easeIn) {
                 self.leftAnimatedMiniView.alpha = 0
                 self.rightAnimatedMiniView.alpha = 0
         }
         
+        let fadeIn = UIViewPropertyAnimator(
+            duration: 0.3,
+            curve: .easeIn) {
+                self.leftAnimatedMiniView.alpha = 1
+                self.rightAnimatedMiniView.alpha = 1
+        }
+        
+        fadeOut.addCompletion { _ in
+            fadeIn.startAnimation()
+        }
         spinAnimator.addCompletion { _ in
-            fadeAnimator.startAnimation()
+            fadeOut.startAnimation()
         }
         spinAnimator.startAnimation()        
     }
