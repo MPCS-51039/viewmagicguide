@@ -18,6 +18,7 @@
 		76115CD8226E3FA700595E55 /* LayerViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76115CD7226E3FA700595E55 /* LayerViews.swift */; };
 		76115CDA226EB9EE00595E55 /* DrawingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76115CD9226EB9EE00595E55 /* DrawingViewController.swift */; };
 		76115CE92270022100595E55 /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76115CE82270022100595E55 /* DrawingView.swift */; };
+		7656F6E8246053D900D8BF30 /* CustomColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7656F6E7246053D900D8BF30 /* CustomColors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		76115CD7226E3FA700595E55 /* LayerViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayerViews.swift; sourceTree = "<group>"; };
 		76115CD9226EB9EE00595E55 /* DrawingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingViewController.swift; sourceTree = "<group>"; };
 		76115CE82270022100595E55 /* DrawingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DrawingView.swift; path = ViewMagicGuide/DrawingView.swift; sourceTree = SOURCE_ROOT; };
+		7656F6E7246053D900D8BF30 /* CustomColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				60BA8EFB22076C8D00643877 /* CoreAnimationDemoViewController.swift */,
+				7656F6E7246053D900D8BF30 /* CustomColors.swift */,
 			);
 			path = "CALayer Animation";
 			sourceTree = "<group>";
@@ -197,6 +200,7 @@
 				76115CD6226E3F3400595E55 /* LayerDemoViewController.swift in Sources */,
 				60BA8EFC22076C8D00643877 /* CoreAnimationDemoViewController.swift in Sources */,
 				60BA8EFA22076C8D00643877 /* AppDelegate.swift in Sources */,
+				7656F6E8246053D900D8BF30 /* CustomColors.swift in Sources */,
 				76115CE92270022100595E55 /* DrawingView.swift in Sources */,
 				76115CDA226EB9EE00595E55 /* DrawingViewController.swift in Sources */,
 				76115CD8226E3FA700595E55 /* LayerViews.swift in Sources */,

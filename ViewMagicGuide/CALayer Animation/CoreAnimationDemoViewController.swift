@@ -15,10 +15,6 @@ class CoreAnimationDemoViewController: UIViewController {
     @IBOutlet weak var springAnimationView: UIView!
     @IBOutlet weak var transitionView: UIView!
     
-    let pink = UIColor(red: 255/255, green: 47/255, blue: 146/255, alpha: 1.0)
-    let purple = UIColor(red: 148/255, green: 33/255, blue: 147/255, alpha: 1.0)
-    let blue = UIColor(red: 0/255, green: 150/255, blue: 255/255, alpha: 1.0)
-    
     let duration: CFTimeInterval = 3
     
     @IBAction func didTapBasicAnimation(_ sender: UIButton) {
@@ -30,7 +26,7 @@ class CoreAnimationDemoViewController: UIViewController {
         shapeLayer.path = circlePath.cgPath
         shapeLayer.backgroundColor = UIColor.clear.cgColor
         shapeLayer.fillColor = UIColor.clear.cgColor
-        shapeLayer.strokeColor = pink.cgColor
+        shapeLayer.strokeColor = UIColor.custom.pink.cgColor
         shapeLayer.lineWidth = 12
         shapeLayer.lineCap = .round
         
@@ -59,7 +55,7 @@ class CoreAnimationDemoViewController: UIViewController {
         shapeLayer.path = squarePath.cgPath
         shapeLayer.backgroundColor = UIColor.clear.cgColor
         shapeLayer.fillColor = UIColor.clear.cgColor
-        shapeLayer.strokeColor = blue.cgColor
+        shapeLayer.strokeColor = UIColor.custom.cornflower.cgColor
         shapeLayer.lineWidth = 12
         shapeLayer.lineCap = .round
         
@@ -69,7 +65,7 @@ class CoreAnimationDemoViewController: UIViewController {
         strokeAnimation.duration = duration
         
         let colorAnimation = CAKeyframeAnimation(keyPath: #keyPath(CAShapeLayer.strokeColor))
-        colorAnimation.values = [purple.cgColor, pink.cgColor, blue.cgColor]
+        colorAnimation.values = [UIColor.custom.teal.cgColor, UIColor.custom.pink.cgColor, UIColor.custom.cornflower.cgColor]
         colorAnimation.keyTimes = [0, 0.5, 1]
         colorAnimation.duration = duration
         
@@ -84,7 +80,7 @@ class CoreAnimationDemoViewController: UIViewController {
         
         let textLayer = CATextLayer()
         textLayer.frame = CGRect(x: 50, y: 45, width: 100, height: 50)
-        textLayer.backgroundColor = blue.cgColor
+        textLayer.backgroundColor = UIColor.custom.cornflower.cgColor
         textLayer.string = "Hello"
         textLayer.alignmentMode = CATextLayerAlignmentMode.center
         
@@ -95,9 +91,7 @@ class CoreAnimationDemoViewController: UIViewController {
         springAnimation.toValue = 1
         springAnimation.duration = duration
         springAnimation.stiffness = 200
-        
         textLayer.add(springAnimation, forKey: nil)
-        
         springAnimationView.layer.addSublayer(textLayer)
     }
     
@@ -106,7 +100,7 @@ class CoreAnimationDemoViewController: UIViewController {
         
         let textLayer = CATextLayer()
         textLayer.frame = CGRect(x: 50, y: 45, width: 100, height: 50)
-        textLayer.backgroundColor = blue.cgColor
+        textLayer.backgroundColor = UIColor.custom.cornflower.cgColor
         textLayer.string = "Hello"
         textLayer.alignmentMode = CATextLayerAlignmentMode.center
         
@@ -121,7 +115,7 @@ class CoreAnimationDemoViewController: UIViewController {
             
             textLayer.add(transition, forKey: nil)
             
-            textLayer.backgroundColor = self.pink.cgColor
+            textLayer.backgroundColor = UIColor.custom.pink.cgColor
             textLayer.string = "World"
         }
     }
