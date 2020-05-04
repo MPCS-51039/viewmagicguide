@@ -86,11 +86,19 @@ class CoreAnimationDemoViewController: UIViewController {
         let springAnimation = CASpringAnimation(keyPath: #keyPath(CALayer.transform))
         springAnimation.valueFunction = CAValueFunction(name: CAValueFunctionName.scaleY)
         
+        springAnimation.valueFunction = CAValueFunction(name: CAValueFunctionName.scaleY)
+        
         springAnimation.fromValue = 0
         springAnimation.toValue = 1
         springAnimation.duration = duration
         springAnimation.stiffness = 200
         textLayer.add(springAnimation, forKey: nil)
+        
+        let rotateAnimation = CABasicAnimation(keyPath: "transform.rotation")
+        rotateAnimation.fromValue = 0.0
+        rotateAnimation.toValue = CGFloat(Double.pi * 2.0)
+        rotateAnimation.duration = duration
+                textLayer.add(rotateAnimation, forKey: nil)
         springAnimationView.layer.addSublayer(textLayer)
     }
     
