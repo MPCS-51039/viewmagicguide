@@ -23,21 +23,29 @@ class DropShadowLayerView: UIView {
         layer.shadowOpacity = 0.7
         layer.shadowRadius = 10
         layer.shadowOffset = CGSize(width: 10, height: 10)
-        layer.opacity = 0.5
     }
 }
 
 class GradientLayerView: UIView {
     override func awakeFromNib() {
-        let gradientLayer = CAGradientLayer()
-        gradientLayer.frame = bounds
-        gradientLayer.colors = [
+        let rainbowColors = [
+            UIColor.black.cgColor,
+            UIColor.purple.cgColor,
             UIColor.blue.cgColor,
-            UIColor.cyan.cgColor
+            UIColor.green.cgColor,
+            UIColor.yellow.cgColor,
+            UIColor.orange.cgColor,
+            UIColor.red.cgColor,
+            UIColor.black.cgColor,
+            UIColor.clear.cgColor,
         ]
         
-        gradientLayer.startPoint = CGPoint(x: 0, y: 0)
-        gradientLayer.endPoint = CGPoint(x: 0, y: 1)
+        let gradientLayer = CAGradientLayer()
+        gradientLayer.frame = bounds
+        gradientLayer.colors = rainbowColors
+        
+        gradientLayer.startPoint = CGPoint(x: 0, y: 0.5)
+        gradientLayer.type = .radial
         
         gradientLayer.cornerRadius = 20
         
