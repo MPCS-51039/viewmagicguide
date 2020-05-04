@@ -47,4 +47,27 @@ class GestureRecognizerDemoViewController: UIViewController {
         )
         recognizer.scale = 1
     }
+    
+    var pressContinued: Bool = false
+    
+    @IBAction func didLongPress(_ recognizer: UILongPressGestureRecognizer) {
+        guard let penny = recognizer.view else {return}
+        
+        self.pressContinued = true
+        let fadeTimer = Timer.scheduledTimer(
+        withTimeInterval: 0.05,
+        repeats: true) { timer in
+            if(self.pressContinued) {
+                penny.alpha = penny.alpha * 0.98
+            }
+        }
+        fadeTimer.tolerance = 0.02
+
+        if (recognizer.state == .ended) {
+            self.pressContinued = false
+            fadeTimer.invalidate()
+                
+            penny.alpha = 1
+        }
+    }
 }

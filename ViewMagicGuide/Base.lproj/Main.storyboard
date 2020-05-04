@@ -135,6 +135,7 @@
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="ffE-fK-r8b" appends="YES" id="srO-vw-QO1"/>
                                     <outletCollection property="gestureRecognizers" destination="y7n-Px-ali" appends="YES" id="CZ1-v9-6by"/>
+                                    <outletCollection property="gestureRecognizers" destination="PFd-Nb-uSI" appends="YES" id="EPq-y4-xBA"/>
                                 </connections>
                             </imageView>
                         </subviews>
@@ -163,6 +164,11 @@
                         <action selector="didPinch:" destination="cME-Zw-NnW" id="cLS-M2-cJc"/>
                     </connections>
                 </pinchGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="PFd-Nb-uSI">
+                    <connections>
+                        <action selector="didLongPress:" destination="cME-Zw-NnW" id="0Mi-3e-qtx"/>
+                    </connections>
+                </pongPressGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="450.72463768115944" y="600"/>
         </scene>
