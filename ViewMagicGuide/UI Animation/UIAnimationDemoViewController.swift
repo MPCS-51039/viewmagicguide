@@ -51,6 +51,9 @@ class UIAnimationDemoViewController: UIViewController {
         
         fadeOut.addCompletion { _ in
             fadeIn.startAnimation()
+                
+            self.leftAnimatedMiniView.transform = CGAffineTransform(rotationAngle: 0)
+            self.rightAnimatedMiniView.transform = CGAffineTransform(rotationAngle: 0)
         }
         spinAnimator.addCompletion { _ in
             fadeOut.startAnimation()
